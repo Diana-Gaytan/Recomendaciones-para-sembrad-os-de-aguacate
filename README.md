@@ -66,6 +66,10 @@
   Está considerado como el mejor software gratis para proyectos de este tipo por su extensa capacidad de intercambio y manejo de datos, además de su facilidad para comprender el uso de las herramientas que posee y el manejo de las mismas.
 
 
+
+
+
+
   **2. 	Desarrollo Experimental**
 
   Se busca que el programa obtenga las coorde-nadas de cada uno de los puntos en los que deben ser colocados los árboles de aguacate. Para lo cual, se requiere que se inserten las coordenadas de latitud y longitud de la esquina superior izquierda y la esquina inferior derecha de la imagen.
@@ -132,6 +136,49 @@
 
   3.3. 	Equipo de prueba
   El equipo en el cual fue probado el programa es una computadora portátil de la marca Hp con las siguientes características:
+  
+  ![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Foto%2011.png)
+   					
+					Figura 1. Especificaciones del dispositivo
+
+
+![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Foto1.png)
+
+ 					Figura 2. Especificaciones del Windows
+					
+					
+					
+**4. Resultados**
+Lo que se logró obtener con el código fue un programa en el cual se le insertan las coorde-nadas de las latitudes y longitudes de dos de los extremos del polígono.
+Con lo anterior, se genera serie de puntos con 10m de separación entre mediante dos ciclos “while” que van sumando 10m en latitud y longi-tud, obteniendo las coordenadas de cada punto.
+A continuación se presenta una imagen con las coordenadas.
+
+![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Foto%203.png)
+
+						Figura 3. Coordenadas obtenidas
+
+Para lograr que el incremento fueran correcto se tuvo que investigar la equivalencia de 10m en latitud y longitud.
+
+
+
+**5. Conclusiones**
+El lenguaje de programación Python puede ser utilizado para trabajar con Sistemas de Informa-ción Geográfica, ya que facilita la realización de diversas tareas en ellos.
+Un ejemplo de lo anterior es el programa expli-cado a lo largo de este artículo, el cual se aplica al área de agricultura.
+Este programa facilita al usuario conocer la cantidad de árboles que pueden ser contenidos en un área proporcionada, con lo cual se puede aprovechar al máximo el terreno del usuario y obtener una mejor ganancia.
+Las expectativas que se tenían de este progra-ma fueron cumplidas, ya que se logra de mane-ra eficiente y sistematizada el cálculo y la ubica-ción de los árboles de aguacate, ahorrando tiempo y personal.El resultado se obtuvo al proporcionar dos coordenadas.
+Sin embargo, la plantación de árboles de agua-cate no es el único caso en el cual se puede aplicar esta herramienta, ya que, con un poco de ingenio se pueden resolver infinidad de si-tuaciones.
+
+
+
+**Bibliografía**
+UCANR. University of California Agriculture and Natural Resources. Avocados. S/D. Recuperado de:
+https://ucanr.edu/sites/alternativefruits/Avocados/
+
+FIRA. Fideicomisos Instituidos en Relación con la Agricultura. Agrocostos. S/D. Recuperado de:
+https://www.fira.gob.mx/agrocostosApp/AgroApp.jsp
+
+INIAP. Instituto Nacional Autónomo de Investigaciones Agropecuarias. INIAP evalúa cultivo de aguacate. S/D. Recuperado de: 
+https://www.agricultura.gob.ec/iniap-evalua-cultivo-de-aguacate/ 
 
 
 
