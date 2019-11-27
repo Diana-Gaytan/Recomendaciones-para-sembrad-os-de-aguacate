@@ -137,7 +137,7 @@
   3.3. 	Equipo de prueba
   El equipo en el cual fue probado el programa es una computadora portátil de la marca Hp con las siguientes características:
   
-  ![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Foto%2011.png)
+  ![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/XD.png)
    					
 					Figura 1. Especificaciones del dispositivo
 
