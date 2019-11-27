@@ -1,4 +1,4 @@
-	# Proyecto-Aguacate
+# Proyecto-Aguacate
   ### Recomendaciones para sembradíos de aguacate en Colima y Michoacán
   #### Programa para cálculo de árboles de aguacate en un área determinada.
   ###### Facultad de Ingeniería Civil, Carretera Coquimatlán Kilómetro 9, Coquimatlán 28,400, Coquimatlán, Co-lima, dgaytan0@ucol.mx, rvalencia5@ucol.mx, mvazquez15@ucol.mx 
@@ -178,7 +178,8 @@ FIRA. Fideicomisos Instituidos en Relación con la Agricultura. Agrocostos. S/D.
 https://www.fira.gob.mx/agrocostosApp/AgroApp.jsp
 
 INIAP. Instituto Nacional Autónomo de Investigaciones Agropecuarias. INIAP evalúa cultivo de aguacate. S/D. Recuperado de: 
-https://www.agricultura.gob.ec/iniap-evalua-cultivo-de-aguacate/ 
+https://www.agricultura.gob.ec/iniap-evalua-cultivo-de-aguacate/
+
 
 
 
