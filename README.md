@@ -10,7 +10,6 @@
   De igual manera se obtendrá el promedio de árboles de aguacate que pueda contener una hectárea para su posterior presentación en una gráfica.
   La determinación del número de árboles recomendados en el área de estudio se obtendrá mediante el uso de lenguaje de programación Python, auxiliado por las librerías GDAL, OGR, OSGeo, entre otras.
   Se planea que el programa obtenga las coordenadas de puntos separados por 10m cada uno.
-  Con los datos obtenidos, se realizará la gráfica del promedio de árboles que pueden crecer y su respectivo análisis.
   Palabras clave: Recomendación. Aguacate. Canti-dad de árboles. Superficie. Python. GDAL. OGR. OSGeo. Promedio.
   
   
@@ -20,7 +19,7 @@
   Similarly, the average number of avocado trees that can contain one hectare will be obtained for later representation in a graph.
   The determination of the number of recommended trees in the study area will be obtained through the use of Python programming language, aided by the libraries: GDAL, OGR, OSGeo, among others.
   The program is planned to obtain the coordinates of points separated by 10m each.
-  With the data obtained, the graph and the analysis of the average number of trees that can grow will be made. 
+  With the data obtained, the analysis of the average number of trees that can grow will be made. 
   Keywords: Recommendation. Avocado. Quantity of trees. Surface. Pyhton. GDAL. OGR. OSGeo. Averange. 
   
   
@@ -86,7 +85,10 @@
   #DY = Lat2-Lat1
   #DY = Lon2-Lon1
   #Variables para las georreferencias
-
+  
+Posteriormenet se crean las variables de las listas para que los datos del csv puedan ser impresos en matplotlib
+x1=[]
+y1=[]
   Y = Lat1
   X = Lon1
 
@@ -94,7 +96,7 @@
   Para esta parte es importante mencionar que se debe realizar un cálculo con el fin de obtener a cuándos segundos en latitud y longitud equiva-len 10m.
 
   IncY = 0.323974082
-  IncX = 0.33
+  IncX = 0.243154
 
   Se establecen las variables para el csv
   #Variables paras el CSV
@@ -110,6 +112,11 @@
         X=(X +IncX)
         coordx=X
         coordy=Y
+	
+	#En esta parte se da la orden de que se agreguen las coordenadas a las listas
+	x1.append(coordx)
+        y1.append(coordy)
+	
         print(coordx,",",coordy)
         salida.writerow((coordx,coordy))
     X = Lon1
@@ -117,8 +124,16 @@
   del salida
 
 
-  Finalmente, se da la instrucción de que el pro-grama sea cerrado
+  Se da la instrucción de que el pro-grama sea cerrado
   ff.close()
+  Y se imprime
+  
+  plt.plot(x1,y1, 'o', Label='Aguacates')
+  plt.xlabel('x1')
+  plt.ylabel('y1')
+  plt.title('Aguacates Cliente')
+  plt.legend()
+  plt.show()
 
   
   3. 	Manejo de datos
@@ -129,7 +144,6 @@
   Datos geoespaciales: debido a que el usuario proporciona la porción del territorio (área) en la que se desarrollará su sembradío de aguacate.
   Lenguaje de programación: Para llevar a cabo el cálculo de árboles de aguacate que puede contener una hectárea primero, es preciso divi-dir el área proporcionada mediante códigos que contienen ciclos y asignar una coordenada en latitud y longitud a cada uno de los puntos en los que cada árbol será colocado.
   Sistemas de Información Geográfica: Esto es utilizado para visualizar los resultados, es decir, las áreas de cada árbol y el lugar en dónde este debe ser sembrado.
-  Cálculos estadísticos: Este tipo de cálculos fueron realizados con base a los resultados obtenidos del código, se calculó la media arit-mética de árboles que pueden ser contenidos en una hectárea.
 
   3.2. 	Sistema Operativo
   El programa está diseñado para trabajar en el Sistema Operativo Windows. 
