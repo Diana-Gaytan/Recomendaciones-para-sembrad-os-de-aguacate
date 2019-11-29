@@ -203,7 +203,3 @@ https://www.fira.gob.mx/agrocostosApp/AgroApp.jsp
 INIAP. Instituto Nacional Autónomo de Investigaciones Agropecuarias. INIAP evalúa cultivo de aguacate. S/D. Recuperado de: 
 https://www.agricultura.gob.ec/iniap-evalua-cultivo-de-aguacate/
 
-
-https://github.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/blob/master/P%C3%B3ster.pdf
-
-
