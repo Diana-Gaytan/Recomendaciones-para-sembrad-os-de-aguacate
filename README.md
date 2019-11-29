@@ -169,13 +169,20 @@ Lo que se logró obtener con el código fue un programa en el cual se le inserta
 Con lo anterior, se genera serie de puntos con 10m de separación entre mediante dos ciclos “while” que van sumando 10m en latitud y longi-tud, obteniendo las coordenadas de cada punto.
 A continuación se presenta una imagen con las coordenadas.
 
+![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Resultado_cod1.png)
+
 ![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Foto%203.png)
 
-						Figura 3. Coordenadas obtenidas
+![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Result2.png)
+
+						Figura 3, 4 y 5. Coordenadas obtenidas
 
 Para lograr que el incremento fueran correcto se tuvo que investigar la equivalencia de 10m en latitud y longitud.
 
 
+![PalabrasdelTextoAlternativo](https://raw.githubusercontent.com/Diana-Gaytan/Recomendaciones-para-sembrad-os-de-aguacate/master/Matplotlib.png)					
+
+					Figura 6. Cuadricula de puntos para árbol de aguacate
 
 **5. Conclusiones**
 El lenguaje de programación Python puede ser utilizado para trabajar con Sistemas de Informa-ción Geográfica, ya que facilita la realización de diversas tareas en ellos.
