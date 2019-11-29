@@ -71,69 +71,71 @@
 
   **2. 	Desarrollo Experimental**
 
-  Se busca que el programa obtenga las coorde-nadas de cada uno de los puntos en los que deben ser colocados los árboles de aguacate. Para lo cual, se requiere que se inserten las coordenadas de latitud y longitud de la esquina superior izquierda y la esquina inferior derecha de la imagen.
-  De esta manera, mediante un ciclo while dentro de otro ciclo while, se le van sumando 10m a la latitud y longitud inicial hasta llegar a la coorde-nada final.
+  Se busca que el programa obtenga las coorde-nadas de cada uno de los puntos en los que deben ser colocados los árboles de aguacate. 	   Para lo cual, se requiere que se inserten las coordenadas de latitud y longitud de la esquina superior izquierda y la esquina inferior   derecha de la imagen.
+  De esta manera, mediante un ciclo while dentro de otro ciclo while, se le van sumando 10m a la latitud y longitud inicial hasta llegar   a la coorde-nada final.
   De esta manera se obtienen los puntos desea-dos.
   A continuación, se explica qué hace cada uno de los módulos del código.
-  Posteriormente se asignan los valores a las latitudes y longitudes
-  Lat1= float(input("Introduzca latitud 1 en x: "))
-  Lon1= float(input("Introduzca longuitud 1 en y: "))
-  Lat2= float(input("Introduzca latitud 2 en x: "))
-  Lon2= float(input("Introduzca longuitud 2 en y: "))
-
-  Una vez hecho lo anterior se cambia el nombre de las variables anteriormente mencionadas
-  #DY = Lat2-Lat1
-  #DY = Lon2-Lon1
-  #Variables para las georreferencias
   
-Posteriormenet se crean las variables de las listas para que los datos del csv puedan ser impresos en matplotlib
+  Posteriormente se asignan los valores a las latitudes y longitudes
+
+import csv
+import matplotlib.pyplot as plt
+import numpy as np
+from numpy.random import rand
+import csv
+import math 
+#from math import *
+Lat1= float(input("Introduzca latitud 1 en x: "))
+Lon1= float(input("Introduzca longuitud 1 en y: "))
+Lat2= float(input("Introduzca latitud 2 en x: "))
+Lon2= float(input("Introduzca longuitud 2 en y: "))
+#DY = Lat2-Lat1
+#DY = Lon2-Lon1
+#variables de para la georeferencias
 x1=[]
 y1=[]
-  Y = Lat1
-  X = Lon1
-
-  Después se asigna el valor del incremento en cada uno de los casos.
-  Para esta parte es importante mencionar que se debe realizar un cálculo con el fin de obtener a cuándos segundos en latitud y longitud equiva-len 10m.
-
-  IncY = 0.323974082
-  IncX = 0.243154
-
-  Se establecen las variables para el csv
-  #Variables paras el CSV
-  ff=open("PuntosAGUACATES.csv","w")
-  salida=csv.writer(ff)
-
-  Se crean los dos ciclos cuidando que mientras que el valor de la latitud inicial más el incremen-to sean menores a la latitud final el programa vaya imprimiendo cada vez que se le suma el incremento al valor de y, y así sucesivamente.
-
-  print("Coordenadas para plantar arbolitos")
-  while Y < Lat2:
+Y = Lat1
+X = Lon1
+IncY = 0.34124547
+IncX = 0.24315497
+#Variables paras el CSV
+ff=open("PuntosAGUACATES.csv","w")
+salida=csv.writer(ff)
+print("Coordenadas para plantar arbolitos")
+while Y < Lat2:
     Y = (Y + IncY)
     while X < Lon2:
         X=(X +IncX)
         coordx=X
         coordy=Y
-	
-	#En esta parte se da la orden de que se agreguen las coordenadas a las listas
-	x1.append(coordx)
+        x1.append(coordx)
         y1.append(coordy)
-	
         print(coordx,",",coordy)
         salida.writerow((coordx,coordy))
     X = Lon1
     print("-------------------------")
-  del salida
+del salida
+ff.close()
+
+print (x1)
+print (y1)
 
 
-  Se da la instrucción de que el pro-grama sea cerrado
-  ff.close()
-  Y se imprime
-  
-  plt.plot(x1,y1, 'o', Label='Aguacates')
-  plt.xlabel('x1')
-  plt.ylabel('y1')
-  plt.title('Aguacates Cliente')
-  plt.legend()
-  plt.show()
+plt.plot(x1,y1, 'o', Label='Aguacates')
+plt.xlabel('x1')
+plt.ylabel('y1')
+plt.title('Aguacates Cliente')
+plt.legend()
+plt.show()
+
+#file="PuntosAGUACATE.csv"
+#csv=open(file,"w")
+#PuntosAGUACATE= [
+#    ['coordx','coordy'],
+#]
+#with open('PuntosAGUACATE.csv', "w", newline= '') as file:
+#    writer = csv.writer(file, delimiter= ",")
+#    write.writerows(PuntosAGUACATE.csv)
 
   
   3. 	Manejo de datos
