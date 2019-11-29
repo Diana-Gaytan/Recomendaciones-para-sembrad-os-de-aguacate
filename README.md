@@ -1,7 +1,7 @@
 # Proyecto-Aguacate
   ### Recomendaciones para sembradíos de aguacate en Colima y Michoacán
   #### Programa para cálculo de árboles de aguacate en un área determinada.
-  ###### Facultad de Ingeniería Civil, Carretera Coquimatlán Kilómetro 9, Coquimatlán 28,400, Coquimatlán, Co-lima, Diana Isabel Gaytán Jiménez dgaytan0@ucol.mx, Rosendo Emanuel Valencia Ojeda rvalencia5@ucol.mx, Manuel Antolin Vázquez Hernández mvazquez15@ucol.mx 
+  ###### Facultad de Ingeniería Civil, Carretera Coquimatlán Kilómetro 9, Coquimatlán 28,400, Coquimatlán, Co-lima, Diana Isabel Gaytán Jiménez dgaytan0@ucol.mx, Rosendo Emanuel Valencia Ojeda rvalencia5@ucol.mx, Manuel Antolin Vázquez Hernández mvazquez15@ucol.mx - Programa Educativo Ingeniero Topógrafo Geomático (PE-ITG) -
   
   
   **Resumen**
