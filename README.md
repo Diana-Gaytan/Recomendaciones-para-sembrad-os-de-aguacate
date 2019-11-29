@@ -78,6 +78,7 @@
   
   Posteriormente se asignan los valores a las latitudes y longitudes
 
+	#Primero se importan los módulos
 	import csv
 	import matplotlib.pyplot as plt
 	import numpy as np
@@ -85,42 +86,56 @@
 	import csv
 	import math 
 	#from math import *
+
+	#Se asignan las variables para que el usuario inserte las coordenadas
 	Lat1= float(input("Introduzca latitud 1 en x: "))
 	Lon1= float(input("Introduzca longuitud 1 en y: "))
 	Lat2= float(input("Introduzca latitud 2 en x: "))
 	Lon2= float(input("Introduzca longuitud 2 en y: "))
 	#DY = Lat2-Lat1
 	#DY = Lon2-Lon1
-	#variables de para la georeferencias
+
+	#En esta parte se introducen las variables para las georreferencias
+	#variables de para la georreferencias
 	x1=[]
 	y1=[]
 	Y = Lat1
 	X = Lon1
+
+	#Aquí se asigna un incremento para x y uno para y
 	IncY = 0.34124547
 	IncX = 0.24315497
+
+
 	#Variables paras el CSV
+	#Se abre el csv
 	ff=open("PuntosAGUACATES.csv","w")
 	salida=csv.writer(ff)
 	print("Coordenadas para plantar arbolitos")
+
+	#Empieza el ciclo while
 	while Y < Lat2:
-    		Y = (Y + IncY)
-   		 while X < Lon2:
-       		 X=(X +IncX)
-       		 coordx=X
-       		 coordy=Y
-       		 x1.append(coordx)
-       		 y1.append(coordy)
-       		 print(coordx,",",coordy)
-       		 salida.writerow((coordx,coordy))
-  	  X = Lon1
-    	print("-------------------------")
+		Y = (Y + IncY)
+		while X < Lon2:
+   			X=(X +IncX)
+   			coordx=X
+   			coordy=Y
+
+		En esta parte del ciclo se agregan las coordenadas del csv a una lista para poder imprimirlas en matplotlib
+   		x1.append(coordx)
+   		y1.append(coordy)
+   		print(coordx,",",coordy)
+   		salida.writerow((coordx,coordy))
+  	X = Lon1
+	#Se imprimen los valores obtenidos
+	print("-------------------------")
 	del salida
-	ff.close()
+	ff.close()  #Se cierra
 
 	print (x1)
 	print (y1)
 
-
+	#Se realiza la impresión en matplotlib
 	plt.plot(x1,y1, 'o', Label='Aguacates')
 	plt.xlabel('x1')
 	plt.ylabel('y1')
